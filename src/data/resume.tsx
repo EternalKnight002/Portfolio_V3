@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { HomeIcon } from "lucide-react";
 import type { ReactNode } from "react";
 
 type Hackathon = {
@@ -15,64 +15,68 @@ type Hackathon = {
   }[];
 };
 
+// Define the WorkExperience type explicitly so TypeScript knows the shape of the array items
+// even when the array is empty.
+type WorkExperience = {
+  company: string;
+  href: string;
+  badges: string[];
+  location: string;
+  title: string;
+  logoUrl: string;
+  start: string;
+  end: string;
+  description: string;
+};
+
 export const DATA = {
   name: "Aman Kumar",
   initials: "AK",
-  url: "https://aman-kumar.vercel.app",
+  url: "https://my-portfolio-iota-taupe-96.vercel.app/",
   location: "India",
   locationLink: "https://www.google.com/maps/place/India",
-  description: "AI-powered developer",
-  summary: `Hey there! 👋 I'm Aman — an AI engineer building intelligent systems that actually matter, a full-stack developer crafting experiences with React, Node.js, and Python, and a Web3 enthusiast exploring the decentralized future.
-I’m obsessed with AI systems and multi-agent architectures, and I love shipping practical tools: AI search, repo assistants, video processing, and one-click deployers that help people get work done faster.
-
-I’m the Bollywood coder whose best bugs get fixed to epic Indian tracks. Code to the beat, debug to the rhythm. 🎶`,
-  avatarUrl: "/me.png",
+  description: "Full Stack & Cloud-Native Developer",
+  summary: "Hi, I’m Aman Kumar. I build scalable cloud-native applications with Java, React, and Spring Boot. I focus on clean architecture, performant frontends, and reliable DevOps automation. I am passionate about bridging innovation between software, cloud infrastructure, and AI-driven development.",
+  avatarUrl: "/me.png", // Ensure you have this image in your public folder or update the path
 
   skills: [
-    // Core
-    "JavaScript", "TypeScript", "Python",
-    "React", "Next.js", "Node.js",
-    // AI & agentic
-    "Prompt Engineering", "Multi-Agent Systems",
-    // Data/infra/tools
-    "REST APIs", "Web Scraping", "PostgreSQL", "Prisma",
-    "FFmpeg", "Git/GitHub",
-    // Extras you’ve used across projects
-    "TailwindCSS", "shadcn/ui", "Stripe", "Cloudflare Workers", "Go"
+    "Java",
+    "Go",
+    "React",
+    "Next.js",
+    "Spring Boot",
+    "Docker",
+    "Kubernetes",
+    "PostgreSQL",
+    "AWS",
+    "Git"
   ],
 
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
 
   contact: {
-    email: "srisrikantpandey@gmail.com",
+    email: "resoamankumar@gmail.com",
     tel: "",
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://github.com/deltacoder2603",
+        url: "https://github.com/EternalKnight002",
         icon: Icons.github,
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/srikant-pandey-b55935209/",
+        url: "https://www.linkedin.com/in/aman-kumar-537a73296/",
         icon: Icons.linkedin,
         navbar: true,
       },
       X: {
         name: "X",
-        url: "https://x.com/DeltaPandey2603",
+        url: "https://x.com/Eternalknigh",
         icon: Icons.x,
         navbar: true,
-      },
-      Youtube: {
-        name: "Youtube",
-        url: "",
-        icon: Icons.youtube,
-        navbar: false,
       },
       email: {
         name: "Send Email",
@@ -83,181 +87,142 @@ I’m the Bollywood coder whose best bugs get fixed to epic Indian tracks. Code 
     },
   },
 
-  work: [
-    {
-      company: "Idiotic Media",
-      href: "",
-      badges: [],
-      location: "Full-time",
-      title: "Junior AI Engineer",
-      logoUrl: "./im.png",
-      start: "Jun 2025",
-      end: "Present",
-      description:
-        "Building AI-powered solutions: developing and implementing models, collaborating on productized AI features, and contributing to infra & tooling.",
-    },
-    {
-      company: "E-Cell PSIT (SRAJAN Pre-Incubation Cell)",
-      href: "",
-      badges: [],
-      location: "Technical Lead",
-      title: "Technical Lead",
-      logoUrl: "./ec.png",
-      start: "Oct 2024",
-      end: "Present",
-      description:
-        "Leading technical initiatives, mentoring, and managing engineering processes for pre-incubation projects.",
-    },
-    {
-      company: "Codekid",
-      href: "",
-      badges: [],
-      location: "Part-time",
-      title: "Frontend Development Intern",
-      logoUrl: "",
-      start: "Feb 2025",
-      end: "Mar 2025",
-      description:
-        "Built and shipped CodeKid’s website with modern, responsive UI/UX and performance best practices.",
-    },
-  ],
+  // Cast the empty array to the specific type to avoid 'never' errors in page.tsx
+  work: [] as WorkExperience[], 
 
   education: [
     {
-      school: "PSIT Kanpur (Pranveer Singh Institute of Technology)",
+      school: "Pranveer Singh Institute of Technology, Kanpur",
       href: "https://psit.ac.in",
-      degree: "Bachelor of Technology — BTech, Computer Science and Engineering",
-      logoUrl: "./psit.png",
-      start: "Sep 2023",
-      end: "Aug 2027",
-    },
-    {
-      school: "St. Joseph's College, Allahabad",
-      href: "https://sjcallahabad.org",
-      degree: "Senior Secondary Education",
-      logoUrl: "./sjc.png",
-      start: "Mar 2009",
-      end: "Mar 2022",
+      degree: "Bachelor of Technology (B.Tech), Computer Science",
+      logoUrl: "/psit.png",
+      start: "2023",
+      end: "2027",
     },
   ],
 
   projects: [
     {
-      title: "Derplexity — AI-Powered Search Summarizer",
-      href: "https://derplexity.vercel.app",
+      title: "Student Productivity Hub",
+      href: "https://student-productivity-app-landing-pa.vercel.app/",
       dates: "2024",
       active: true,
       description:
-        "Sends queries to Google, scrapes top results, and uses Gemini to summarize into crisp answers.",
-      technologies: [
-        "Next.js", "TypeScript", "Gemini API", "Web Scraping"
-      ],
+        "All-in-one productivity platform for students with task management, note-taking, Pomodoro timer, and academic calendar integration.",
+      technologies: ["React", "Node.js", "MongoDB", "Express.js", "TailwindCSS"],
       links: [
-        { type: "Website", href: "https://derplexity.vercel.app", icon: <Icons.globe className="size-3" /> },
-        { type: "Source", href: "https://github.com/deltacoder2603/derplexity", icon: <Icons.github className="size-3" /> },
+        {
+          type: "Website",
+          href: "https://student-productivity-app-landing-pa.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/EternalKnight002/student-productivity-app",
+          icon: <Icons.github className="size-3" />,
+        },
       ],
-      image: "/derp.png",
+      image: "/projects/Student_productivity.png",
       video: "",
     },
     {
-      title: "Zenith — One-Click Deployment",
-      href: "https://github.com/deltacoder2603/zenith",
-      dates: "2025",
-      active: true,
-      description:
-        "Instantly deploy web apps from GitHub with auto build detection, framework-agnostic support, ngrok live previews, and modular Go microservices.",
-      technologies: ["Go", "Next.js", "ngrok", "Microservices"],
-      links: [
-        { type: "Source", href: "https://github.com/deltacoder2603/zenith", icon: <Icons.github className="size-3" /> },
-      ],
-      image: "/zen.png",
-      video: "",
-    },
-    {
-      title: "GitMaster — GitHub Repository Assistant",
-      href: "https://git-master-six.vercel.app",
+      title: "RepoMind - GitHub Repository Analyzer",
+      href: "https://github.com/EternalKnight002/repo-mind",
       dates: "2024",
       active: true,
       description:
-        "Analyze full repos with Gemini and answer natural-language questions about the codebase.",
-      technologies: ["Gemini API", "GitHub API", "NLP"],
+        "AI-powered tool to analyze GitHub repositories, generate documentation insights, and visualize code complexity with intelligent summaries.",
+      technologies: ["Python", "OpenAI API", "Flask", "React", "GitHub API"],
       links: [
-        { type: "Website", href: "https://git-master-six.vercel.app", icon: <Icons.globe className="size-3" /> },
-        { type: "Source", href: "https://github.com/deltacoder2603/Git-Master", icon: <Icons.github className="size-3" /> },
+        {
+          type: "Source",
+          href: "https://github.com/EternalKnight002/repo-mind",
+          icon: <Icons.github className="size-3" />,
+        },
       ],
-      image: "/gm.png",
+      image: "/projects/api-gateway.png",
       video: "",
     },
     {
-      title: "AyurvedaAI — Ayurvedic Remedy Assistant",
-      href: "https://ayurveda-aidel.vercel.app",
+      title: "Extension Marketplace",
+      href: "https://extension-marketplace-pink.vercel.app/",
       dates: "2024",
       active: true,
       description:
-        "Understands symptoms, suggests Ayurvedic remedies, and augments with web data using Gemini.",
-      technologies: ["Gemini API", "Next.js"],
+        "Curated showcase of Chrome and VS Code extensions I've built. Browse, explore, and discover productivity tools for developers.",
+      technologies: ["Next.js", "React", "TailwindCSS", "TypeScript", "Chrome API"],
       links: [
-        { type: "Website", href: "https://ayurveda-aidel.vercel.app", icon: <Icons.globe className="size-3" /> },
-        { type: "Source", href: "https://github.com/deltacoder2603/AyurvedaAI", icon: <Icons.github className="size-3" /> },
+        {
+          type: "Website",
+          href: "https://extension-marketplace-pink.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/EternalKnight002/extension-marketplace",
+          icon: <Icons.github className="size-3" />,
+        },
       ],
-      image: "/ayur.png",
+      image: "/projects/extension.png",
       video: "",
     },
     {
-      title: "Stock Price Predictor",
-      href: "",
-      dates: "2024",
-      active: false,
-      description:
-        "Fetches market data, trains regression models, and visualizes forecasts.",
-      technologies: ["Python", "scikit-learn", "Yahoo Finance"],
-      links: [
-        { type: "Source", href: "https://github.com/deltacoder2603/Stock_Predection_Model", icon: <Icons.github className="size-3" /> },
-      ],
-      image: "/sp.png",
-      video: "",
-    },
-    {
-      title: "AI Tutor — Multi-Agent Subject Assistant",
-      href: "https://ai-tutor-frontend-topaz.vercel.app",
+      title: "SkillMatchAI - Intelligent Job Matcher",
+      href: "https://github.com/EternalKnight002/SkillMatchAI",
       dates: "2024",
       active: true,
       description:
-        "Central tutor agent dispatches to subject-specific agents for tailored answers.",
-      technologies: ["Gemini API", "Python", "Multi-Agent"],
+        "AI-driven platform that matches candidates with job opportunities based on skills, experience, and learning paths with personalized recommendations.",
+      technologies: ["Python", "Machine Learning", "FastAPI", "React", "PostgreSQL"],
       links: [
-        { type: "Website", href: "https://ai-tutor-frontend-topaz.vercel.app", icon: <Icons.globe className="size-3" /> },
-        { type: "Source", href: "https://github.com/deltacoder2603/AiTutor", icon: <Icons.github className="size-3" /> },
+        {
+          type: "Source",
+          href: "https://github.com/EternalKnight002/SkillMatchAI",
+          icon: <Icons.github className="size-3" />,
+        },
       ],
-      image: "/at.png",
+      image: "/projects/skill-match-ai.png",
       video: "",
     },
     {
-      title: "Canva AI — Design Assistant",
-      href: "",
+      title: "MusicSync - Collaborative Playlist Manager",
+      href: "https://music-sync-web.vercel.app/",
       dates: "2024",
-      active: false,
+      active: true,
       description:
-        "Generates layouts, palettes, and full designs via AI with DAM and one-click apply in Canva.",
-      technologies: ["Gemini API", "React", "TypeScript", "Node.js", "Canva SDK"],
+        "Real-time music synchronization platform for creating and sharing playlists across Spotify, YouTube Music, and Apple Music with friends.",
+      technologies: ["Next.js", "WebSocket", "Spotify API", "Redis", "TailwindCSS"],
       links: [
-        { type: "Source", href: "https://github.com/deltacoder2603/canva-ai", icon: <Icons.github className="size-3" /> },
+        {
+          type: "Website",
+          href: "https://music-sync-web.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/EternalKnight002/music-sync",
+          icon: <Icons.github className="size-3" />,
+        },
       ],
-      image: "/can.png",
+      image: "/projects/music-sync.png",
       video: "",
     },
     {
-      title: "Video Editor — AI Video Processing",
-      href: "",
+      title: "TerminalHistory",
+      href: "https://github.com/EternalKnight002/terminalHistory",
       dates: "2024",
-      active: false,
+      active: true,
       description:
-        "Local, privacy-focused editor with profanity detection/muting (Hi/En), segment trim/join, Whisper transcription, and clean UI.",
-      technologies: ["Next.js", "Node.js", "FFmpeg", "Whisper", "Tailwind", "shadcn/ui"],
+        "Advanced terminal history manager with smart search, AI-powered command suggestions, and session replay capabilities.",
+      technologies: ["Go", "Bash", "SQLite", "Cobra CLI", "fzf"],
       links: [
-        { type: "Source", href: "https://github.com/deltacoder2603/video-editor", icon: <Icons.github className="size-3" /> },
+        {
+          type: "Source",
+          href: "https://github.com/EternalKnight002/terminalHistory",
+          icon: <Icons.github className="size-3" />,
+        },
       ],
-      image: "/ve.png",
+      image: "/projects/terminal-history.png",
       video: "",
     },
   ],
