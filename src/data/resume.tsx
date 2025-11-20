@@ -16,14 +16,13 @@ type Hackathon = {
 };
 
 export const DATA = {
-  name: "Srikant Pandey",
-  initials: "SP",
-  url: "https://srikantpandey.vercel.app",
+  name: "Aman Kumar",
+  initials: "AK",
+  url: "https://aman-kumar.vercel.app",
   location: "India",
   locationLink: "https://www.google.com/maps/place/India",
   description: "AI-powered developer",
-  summary: `Hey there! 👋 I'm Srikant — an AI engineer building intelligent systems that actually matter, a full-stack developer crafting experiences with React, Node.js, and Python, and a Web3 enthusiast exploring the decentralized future.
-
+  summary: `Hey there! 👋 I'm Aman — an AI engineer building intelligent systems that actually matter, a full-stack developer crafting experiences with React, Node.js, and Python, and a Web3 enthusiast exploring the decentralized future.
 I’m obsessed with AI systems and multi-agent architectures, and I love shipping practical tools: AI search, repo assistants, video processing, and one-click deployers that help people get work done faster.
 
 I’m the Bollywood coder whose best bugs get fixed to epic Indian tracks. Code to the beat, debug to the rhythm. 🎶`,
@@ -77,7 +76,7 @@ I’m the Bollywood coder whose best bugs get fixed to epic Indian tracks. Code 
       },
       email: {
         name: "Send Email",
-        url: "mailto:srisrikantpandey@gmail.com",
+        url: "mailto:resoamankumar@gmail.com",
         icon: Icons.email,
         navbar: false,
       },
