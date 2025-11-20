@@ -46,5 +46,19 @@
     "postcss": "^8.5.3",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.8.3"
-  }
+  },
+  "description": "<div align=\"center\">\r   <img alt=\"Srikant Pandey – AI-powered Developer\" src=\"./public/me.png\" width=\"180\" height=\"180\">\r   <h1>srikantpandey.vercel.app</h1>\r   <p>AI-powered developer • Multi-agent tinkerer • Bollywood-coded builder</p>\r   <a href=\"https://srikantpandey.vercel.app\">View the live site</a> ·\r   <a href=\"https://www.linkedin.com/in/srikant-pandey-b55935209/\">Connect on LinkedIn</a>\r </div>",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deltacoder2603/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/deltacoder2603/portfolio/issues"
+  },
+  "homepage": "https://github.com/deltacoder2603/portfolio#readme"
 }
