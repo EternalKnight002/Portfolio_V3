@@ -129,7 +129,7 @@ export const DATA = {
       active: true,
       description:
         "All-in-one productivity platform for students with task management, note-taking, Pomodoro timer, and academic calendar integration.",
-      technologies: ["React", "Node.js", "MongoDB", "Express.js", "TailwindCSS"],
+      technologies: ["ReactNative", "TypeScript", "Zustand", "Expo", "TailwindCSS"],
       links: [
         {
           type: "Website",
@@ -152,7 +152,7 @@ export const DATA = {
       active: true,
       description:
         "AI-powered tool to analyze GitHub repositories, generate documentation insights, and visualize code complexity with intelligent summaries.",
-      technologies: ["Python", "OpenAI API", "Flask", "React", "GitHub API"],
+      technologies: ["Python", "OpenAI API", "TypeScript", "React", "GitHub API"],
       links: [
         {
           type: "Source",
@@ -170,7 +170,7 @@ export const DATA = {
       active: true,
       description:
         "Curated showcase of Chrome and VS Code extensions I've built. Browse, explore, and discover productivity tools for developers.",
-      technologies: ["Next.js", "React", "TailwindCSS", "TypeScript", "Chrome API"],
+      technologies: ["Next.js", "React", "ManifestV3", "TypeScript", "Chrome API"],
       links: [
         {
           type: "Website",
@@ -193,7 +193,7 @@ export const DATA = {
       active: true,
       description:
         "AI-driven platform that matches candidates with job opportunities based on skills, experience, and learning paths with personalized recommendations.",
-      technologies: ["Python", "Machine Learning", "FastAPI", "React", "PostgreSQL"],
+      technologies: ["Python", "Machine Learning", "FastAPI", "React", "Kaggle"],
       links: [
         {
           type: "Source",
@@ -211,7 +211,7 @@ export const DATA = {
       active: true,
       description:
         "Real-time music synchronization platform for creating and sharing playlists across Spotify, YouTube Music, and Apple Music with friends.",
-      technologies: ["Next.js", "WebSocket", "Spotify API", "Redis", "TailwindCSS"],
+      technologies: ["Next.js", "WebSocket", "Electron", "NTP", "TailwindCSS"],
       links: [
         {
           type: "Website",
@@ -234,7 +234,7 @@ export const DATA = {
       active: true,
       description:
         "Advanced terminal history manager with smart search, AI-powered command suggestions, and session replay capabilities.",
-      technologies: ["Go", "Bash", "SQLite", "Cobra CLI", "fzf"],
+      technologies: ["TypeScript", "Bash", "VS Code Extension API", "Zsh", "Node.js"],
       links: [
         {
           type: "Source",
