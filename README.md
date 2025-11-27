@@ -2,7 +2,7 @@
   <img alt="Aman Kumar – Full Stack & Cloud-Native Developer" src="./public/me.png" width="180" height="180">
   <h1>My Portfolio</h1>
   <p>Full Stack & Cloud-Native Developer • Building scalable applications with modern tech</p>
-  <a href="https://my-portfolio-iota-taupe-96.vercel.app/">View the live site</a> ·
+  <a href="https://amankumar002.vercel.app/">View the live site</a> ·
   <a href="https://www.linkedin.com/in/aman-kumar-537a73296/">Connect on LinkedIn</a> ·
   <a href="https://github.com/EternalKnight002">Follow on GitHub</a>
 </div>
